@@ -7,41 +7,46 @@
     <title>Project Idea Generator</title>
   </head>
   <body>
-    <header><h1>Project Idea Generator for Developers</h1></header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter your subject of interest"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        project ideas
-        <br />
-        project ideas
-        <br />
-        project ideas
-        <br />
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/EfeEdohor" target="_blank">Efe Edohor</a> and
-      is open-sourced on
-      <a
-        href="https://github.com/EfeEdohor/project-idea-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://ai-project-idea-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
-    <script src="src/index.js"></script>
+    <div class="container">
+      <header><h1>Project Idea Generator for Developers</h1></header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter your subject of interest"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="ideas">
+          project ideas
+          <br />
+          project ideas
+          <br />
+          project ideas
+          <br />
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/EfeEdohor" target="_blank"
+          ><strong>Efe Edohor</strong></a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/EfeEdohor/project-idea-generator"
+          target="_blank"
+          ><strong>GitHub</strong></a
+        >
+        and hosted on
+        <a href="https://ai-project-idea-generator.netlify.app/" target="_blank"
+          ><strong>Netlify</strong></a
+        >
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
