@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Project Idea Generator</title>
   </head>
@@ -10,7 +11,7 @@
     <div class="container">
       <header><h1>Project Idea Generator for Developers</h1></header>
       <main>
-        <form>
+        <form id="idea-generator-form">
           <input
             type="text"
             placeholder="Enter your subject of interest"
@@ -21,14 +22,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="ideas">
-          project ideas
-          <br />
-          project ideas
-          <br />
-          project ideas
-          <br />
-        </div>
+        <div class="ideas" id="ideas"></div>
       </main>
       <footer>
         This AI project was coded by
