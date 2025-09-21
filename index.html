@@ -12,19 +12,22 @@
     <div class="container">
       <header><h1>Project Idea Generator for Developers</h1></header>
       <main>
-        <form id="idea-generator-form">
-          <input
-            type="text"
-            placeholder="Enter your subject of interest"
-            autofocus
-            required
-            autocomplete="off"
-            class="directive"
-            id="user-directive"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="ideas" id="ideas"></div>
+        <div class="form-container">
+          <form id="idea-generator-form">
+            <input
+              type="text"
+              placeholder="Enter your subject of interest"
+              autofocus
+              required
+              autocomplete="off"
+              class="directive"
+              id="user-directive"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e weather, payment or poem</div>
+        </div>
+        <div class="ideas hidden" id="ideas"></div>
       </main>
       <footer>
         This AI project was coded by

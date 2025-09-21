@@ -17,6 +17,10 @@ function generateIdea(event) {
     "You are a creative mind that thinks deeps and understands the future of technology. Your mission is to succinctly generate ideas in five lines for front end developers in simple terms that are impressive to employers and stakeholders in basic HTML. Make sure to use the user directive below. The Idea should not have  a title. After generating the idea, separately sign the idea with 'SheCodes AI- Efe Edohor' in a <strong> and <br/> element on a new line at the end of the poem";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let ideasElement = document.querySelector("#ideas");
+  ideasElement.classList.remove("hidden");
+  ideasElement.innerHTML = `⌛Generating a project idea about ${directiveInput.value}`;
+
   console.log("Generating creative idea");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
