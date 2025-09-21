@@ -21,10 +21,6 @@ function generateIdea(event) {
   ideasElement.classList.remove("hidden");
   ideasElement.innerHTML = `⌛Generating a project idea about ${directiveInput.value}`;
 
-  console.log("Generating creative idea");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
-
   axios.get(apiURL).then(displayIdea);
 }
 
